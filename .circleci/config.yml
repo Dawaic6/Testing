@@ -3,18 +3,8 @@ jobs:
   build:
     docker:
       - image: node:20.11.1
-    environment: 
-      repo_token: 
-  
     steps:
-      - checkout:
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Run tests
-          command: npm test --coverage
-          notify:
-      - run:
-          name: Upload coverage to Coveralls
-          command: npx coveralls < coverage/lcov.info
+      - checkout
+      - run: npm install
+      - run: npm test 
+         
