@@ -1,0 +1,21 @@
+{
+  "name": "testng",
+  "version": "1.0.0",
+  "description": "all about testing test",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Testing"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "cedric",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
